@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sticky-top">
+        <header class="flex">
+            <img id="main-logo" src="https://www.mjselectricalsupplies.com.au/assets/website_logo.png?1684218399" alt="MJS Electrical">
+            <div id="search-box" class="flex">
+                <input type="text" name="" placeholder="Search Item..." id="">
+                <div id="search-box-image">
+                    <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/search_icon.png?1684218399" alt="Q">
+                </div>
+            </div>
+            <div id="cart" class="flex">
+                <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/cart_icon.png?1684218399" alt="Cart">
+                <b>My Cart: <span id="cart-count"></span> </b>
+            </div>
+            <div id="contact" class="flex">
+                <p>Need Help?</p>
+                <div id="contact-number" class="flex">
+                    <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/phone_icon.png?1684218399" alt="">
+                    <a id="c-num">(02) 9726 3111</a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="flex">
+            <ul class="flex">
+                <li>AIR MOVEMENT</li>
+                <li>CABLE</li>
+                <li>CIRCUIT PROTECTION</li>
+                <li>CONDUCT & DUCTING</li>
+                <li>ELECTRICAL ACCESSORIES</li>
+                <li>INDUSTRIAL</li>
+                <li>LIGHTNING</li>
+                <li>SERVICE PROVIDER</li>
+                <li>SMART HOME & SECURITY</li>
+                <li>SWITCHBOARDS</li>
+                <li>SWITCHGEARS</li>
+                <li>TOOLS</li>
+                <li>TV & DATA</li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div id="main-body">
+        <div id="main-body-head" class="flex">
+            <p class="cat">Home</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59385.png" alt=">">
+            <p class="cat">Cable</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59385.png" alt=">">
+            <p class="cat">Flat TPS Cable</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59385.png" alt=">">
+            <p class="cat">Twin and Earth</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59385.png" alt=">">
+            <p id="last-cat">2.5mm Twin and Earth (100mtr Roll)</p>
+        </div>
+
+        <div id="main-body-content">
+            <div class="body-card" id="image-div">
+                <div id="main-image" class="flex">
+                    <img src="https://www.mjselectricalsupplies.com.au/assets/full/TPS25TE.jpg?20210204030351" alt="Main-image">
+                </div>
+                <div id="extra-image" class="flex">
+                    <img src="https://www.mjselectricalsupplies.com.au/assets/alt_1_thumb/TPS25TE.jpg?20210204032245" alt="Main-image">
+                </div>
+            </div>
+            <div class="body-card" id="about-div">
+                <div id="data">
+                    <h2>2.5mm Twin and Earth (100mtr Roll)</h2>
+                    <b>SKU: TPS25TE</b>
+                    <p class="price">AU $170.50</p>
+                    <div class="stock flex">
+                        <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/bag-stock.png?1684218399" alt="">
+                        <p>In Stock</p>
+                    </div>
+                    <div id="info-banner" class="flex">
+                        <div class="left">
+                            BUY NOW, PAY <br> LATER
+                        </div>
+                        <div class="right">
+                            <div class="top flex">
+                                <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/afterpay.png?1684218399" alt="">
+                                <p>OR</p>
+                            </div>
+                            <div class="bottom flex">
+                                <p>or from $10/week with </p>
+                                <img src="https://static.zipmoney.com.au/assets/default/product-widget/img/rebrand/zip-button-wht.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <p>Quantity:</p>
+                        <input type="number" class="inp-count" id="add-count" min="1" placeholder="0">
+                        <button class="addtocart" id="atc">ADD TO CART</button>
+                    </div> 
+                    <div class="Shipping">
+                        <p>Calculate Shipping:</p>
+                        <select name="country" id="country">
+                            <option value="">Australia</option>
+                            <option value="">Country 1</option>
+                            <option value="">Country 2</option>
+                            <option value="">Country 3</option>
+                            <option value="">Country 4</option>
+                            <option value="">Country 5</option>
+                            <option value="">Country 6</option>
+                        </select>
+                        <input type="text" placeholder="Post Code">
+                        <button id="calc">CALCULATE</button>
+                    </div> 
+                    <hr>
+                    <div id="shipment-cards">
+                        <div class="left-cards">
+                        <div class="shipment-card flex">
+                            <div class="shipment-card-img">
+                                <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/order-by.png?1684218399" alt="asd">
+                            </div>
+                            <div class="shipment-card-info">
+                                <h2>24 Hour Dispatch</h2>
+                                <p>On All Orders</p>
+                            </div>
+                        </div>
+                        <div class="shipment-card flex">
+                            <div class="shipment-card-img">
+                                <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/australian.png?1684218399" alt="asd">
+                            </div>
+                            <div class="shipment-card-info">
+                                <h2>Australian Company</h2>
+                                <p>Owned & Operated</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="right-cards">
+                        <div class="shipment-card flex">
+                            <div class="shipment-card-img">
+                                <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/20+-years.png?1684218399" alt="asd">
+                            </div>
+                            <div class="shipment-card-info">
+                                <h2>20+ Years</h2>
+                                <p>Industry Experience</p>
+                            </div>
+                        </div>
+                        <div class="shipment-card flex">
+                            <div class="shipment-card-img">
+                                <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/20+-years.png?1684218399" alt="asd">
+                            </div>
+                            <div class="shipment-card-info">
+                                <h2>Easy Returns</h2>
+                                <p>30 Days Peace Of Mind</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+                    <div class="share-tab flex">
+                        <p>Share This Item: </p>
+                        <img src="https://pbs.twimg.com/profile_images/1646955748444852231/XGehZ_9v_400x400.jpg" alt="FB">
+                        <img src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk" alt="Twitter">
+                        <img src="https://i.pinimg.com/280x280_RS/f6/e9/3a/f6e93a06b500b2d87ffd32e1f56f7c6f.jpg" alt="Pin">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Google_Plus_logo_%282015-2019%29.svg/2048px-Google_Plus_logo_%282015-2019%29.svg.png" alt="gmail">
+                    </div>
+                </div>
+            </div>
+            <div class="body-card" id="details-div">
+                <div class="details-head">
+                    <span class="active">DESCRIPTION</span>
+                    <span>RETURN</span>
+                </div>
+                <div class="details-text">
+                    <ul>
+                        <li>2.5mm Twin & Earth TPS Electrical Cable</li>
+                        <li>100mtr Roll</li>
+                        <li>Mainly Used for Power Circuits</li>
+                        <li>Stranded Wire</li>
+                        <li>Meter Marked</li>
+                        <li>V90 Rated</li>
+                        <li>Australian Standards / Approval Marked</li>
+                        <li>Please Note Brand may Vary from picture - we sell Electra Cables, Olex &     Prysmian - whatever we can offer for the best price at the time of your order.</li>
+                    </ul>
+                    <p id="danger-text">*** FREE DELIVERY IN SYDNEY METRO AREA FOR BULK QTYS 20 OR MORE ***</p>
+                </div>
+            </div>
+            <div class="body-card" id="specifications-div">
+                <div class="speci-data">
+                    <h3 class="speci-head">SPECIFICATION</h3>
+                    <h3 class="speci-head">PRODUCT INFO</h3>
+                    <div class="key-value flex">
+                        <div class="key"><b>SKU</b></div>
+                        <div class="value"><p>TPS25TE</p></div>
+                    </div>
+                    <div class="key-value flex">
+                        <div class="key"><b>BRAND</b></div>
+                        <div class="value"><p>MJS Electrical Products & Supplies</p></div>
+                    </div>
+                    <br>
+                    <h3 class="speci-head">SHIPPING INFO</h3>
+                    <div class="key-value flex">
+                        <div class="key"><b>Shipping Weight</b></div>
+                        <div class="value"><p>15.0000kg</p></div>
+                    </div>
+                    <div class="key-value flex">
+                        <div class="key"><b>Shipping Width</b></div>
+                        <div class="value"><p>0.230m</p></div>
+                    </div>
+                    <div class="key-value flex">
+                        <div class="key"><b>Shipping Height</b></div>
+                        <div class="value"><p>0.260m</p></div>
+                    </div>
+                    <div class="key-value flex">
+                        <div class="key"><b>Shipping Length</b></div>
+                        <div class="value"><p>0.230m</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="atc-sticky" class="flex">
+        <div class="stk-left">
+            <div class="info flex">
+                <div class="img">
+                    <img src="https://www.mjselectricalsupplies.com.au/assets/thumbL/TPS25TE.jpg?20210204031559" alt="">
+                </div>
+                <div class="lable">
+                    <h1>2.5mm Twin and Earth (100mtr Roll)</h1>
+                    <div class="lable-bottom flex">
+                        <p class="price">AU $170.50</p>
+                        <div class="stock flex">
+                            <img src="https://www.mjselectricalsupplies.com.au/assets/themes/2021-08-zellis/images/bag-stock.png?1684218399" alt="">
+                            <p>In Stock</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stk-left flex">
+            <p>Quantity</p>
+            <input type="number" class="inp-count" id="add-count" min="1" placeholder="0">
+            <button class="addtocart" id="atc">ADD TO CART</button>
+        </div>
+    </div>
+    <footer>
+        <center>THIS IS FOOTER</center>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
